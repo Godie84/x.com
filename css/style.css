@@ -1,152 +1,249 @@
+/* Reset de márgenes y rellenos para garantizar que todo tenga una base consistente */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box; /* Asegura que el ancho y alto de los elementos incluyan el relleno y los bordes */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Establece la fuente predeterminada */
 }
 
+/* Fondo del body */
 body {
-    background-color: #000;
+    background-color: #000; /* Define el color de fondo del cuerpo de la página como negro */
 }
 
-h1,
-h2,
-p,
-a {
-    color: white;
+/* Color de texto por defecto para los títulos, párrafos y enlaces */
+h1, h2, p, a {
+    color: white; /* Establece el color del texto como blanco */
 }
 
+/* Estilo básico para los botones */
 button {
-    background-color: white;
+    background-color: white; /* Define el fondo de los botones como blanco */
 }
 
+/* Contenedor principal con alineación centrada */
 .container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-}
-
-.logox {
-    width: 350px;
-    object-fit: contain;
-    margin: 80px;
-}
-
-.title1 {
-    font-size: 74px;
-    margin-bottom: 30px;
-    width: 490px;
-}
-
-.title2 {
-    font-size: 34xp;
-    margin-bottom: 20px;
-}
-
-.botongoogle {
-    display: flex;
-    padding: 20px;
-    width: 300px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 30px;
-    margin-bottom: 10px;
-}
-
-.googleimg {
-    width: 20px;
-    margin-right: 10px;
-}
-
-.textgoogle {
-    font-size: 16px;
-    color: #000;
-}
-
-.container3 p {
-    font-size: 18px;
-}
-
-.container3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 290px;
-}
-
-.linea1,
-.linea2 {
-    background-color: white;
-    width: 45%;
-    height: 1px;
-    margin: 9px;
-}
-
-.text-btn-cuenta {
-    background-color: rgb(26, 140, 216);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: white;
-}
-
-.text-btn-cuenta p {
-    color: white;
-}
-
-
-.politicas {
-    font-size: 12px;
-    width: 330px;
-    margin-bottom: 45px;
-}
-
-.politicas a {
-    color: rgb(0, 43, 178);
-    text-decoration: none;
-}
-
-.text-pregunta {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-.text-login{
-    background-color: black;
-    color: rgb(0, 43, 178);
-    border: rgb(0, 43, 178) solid 1px;
-}
-
-.text-login:hover{
-    background-color: rgb(0, 16, 24);
-    cursor: pointer;
-}
-
-.footer{
+    display: flex; /* Utiliza Flexbox para organizar los elementos de forma flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin-top: 150px; /* Establece un margen superior de 70px */
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-top: 20px;
 }
 
-
-.footer ul{
-    display: flex;
-    width: 800px;
-    flex-wrap: wrap;
-    justify-content: center;    
+.container2{
+    margin-left: 20%;
 }
 
-.footer ul li{
-    margin: 8px 15px;
+/* Estilo para el logo (imagen) */
+.logox {
+    width: 20vw; /* Establece el ancho de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste manteniendo su proporción */
+    margin: 80px; /* Aplica un margen de 80px alrededor de la imagen */
+}
+
+/* Título principal */
+.title1 {
+    font-size: 60px; /* Tamaño de fuente de 74px */
+    margin-bottom: 30px; /* Margen inferior de 30px */
+    width: 500px; /* Establece un ancho fijo de 490px */
     
 }
 
-.footer ul li a{
-    text-decoration: none;
-    font-size: 14px;
+/* Título secundario */
+.title2 {
+    font-size: 34px; /* Tamaño de fuente de 34px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
 
+/* Estilo para los botones de registro con Google y Apple */
+.botongoogle {
+    display: flex; /* Usa Flexbox para alinear el contenido dentro del botón */
+    padding: 10px; /* Relleno de 20px dentro del botón */
+    width: 300px; /* Establece el ancho de los botones */
+    justify-content: center; /* Centra los elementos dentro del botón */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    border: none; /* Elimina los bordes del botón */
+    border-radius: 30px; /* Redondea las esquinas del botón */
+    margin-bottom: 10px; /* Aplica un margen inferior de 10px */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón */
+}
+
+/* Estilo para las imágenes dentro de los botones (iconos de Google y Apple) */
+.googleimg {
+    width: 20px; /* Establece un ancho de 20px para las imágenes */
+    margin-right: 10px; /* Agrega un margen a la derecha de 10px */
+}
+
+/* Estilo para el texto dentro de los botones */
+.textgoogle {
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    color: #000; /* Establece el color del texto como negro */
+}
+
+/* Contenedor con líneas y el texto "O" entre ellas */
+.container3 {
+    display: flex; /* Usa Flexbox para alinear los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    width: 290px; /* Establece el ancho del contenedor a 290px */
+    
+}
+
+/* Estilo para las líneas en el contenedor */
+.linea1, .linea2 {
+    background-color: white; /* Color blanco para las líneas */
+    width: 45%; /* Ancho de las líneas al 45% de su contenedor */
+    height: 1px; /* Altura de 1px para las líneas */
+    margin: 9px; /* Margen de 9px alrededor de las líneas */
+}
+
+/* Estilo del botón "Crear cuenta" */
+.text-btn-cuenta {
+    background-color: rgb(26, 140, 216); /* Color de fondo azul */
+    margin-top: 15px; /* Margen superior de 15px */
+    margin-bottom: 15px; /* Margen inferior de 15px */
+    color: white; /* Color del texto dentro del botón como blanco */
+}
+
+/* Color del texto dentro del botón "Crear cuenta" */
+.text-btn-cuenta p {
+    color: white; /* El texto dentro del botón será blanco */
+}
+
+/* Estilo del texto con los términos y condiciones */
+.politicas {
+    font-size: 12px; /* Tamaño de fuente de 12px */
+    width: 330px; /* Ancho del texto de 330px */
+    margin-bottom: 45px; /* Margen inferior de 45px */
+}
+
+/* Estilo de los enlaces dentro de las políticas */
+.politicas a {
+    color: rgb(0, 43, 178); /* Color azul para los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilo del texto de la pregunta "¿Ya tienes una cuenta?" */
+.text-pregunta {
+    font-size: 14px; /* Tamaño de fuente de 14px */
+    margin-bottom: 15px; /* Margen inferior de 15px */
+}
+
+/* Estilo del botón "Iniciar sesión" */
+.text-login {
+    background-color: black; /* Fondo negro para el botón */
+    color: rgb(0, 43, 178); /* Color del texto azul */
+    border: rgb(0, 43, 178) solid 1px; /* Borde azul */
+}
+
+/* Estilo al pasar el mouse sobre el botón de inicio de sesión */
+.text-login:hover {
+    background-color: rgb(0, 16, 24); /* Fondo negro más oscuro al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón */
+}
+
+/* Estilos del footer */
+.footer {
+    width: 100%; /* Ancho completo para el footer */
+    display: flex; /* Flexbox para organizar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-bottom: 40px; /* Margen inferior de 40px */
+    margin-top: 20px; /* Margen superior de 20px */
+}
+
+/* Estilo de la lista dentro del footer */
+.footer ul {
+    display: flex; /* Flexbox para organizar los elementos en una fila */
+    width: 800px; /* Establece el ancho de la lista en 800px */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilo para cada item de la lista */
+.footer ul li {
+    margin: 8px 15px; /* Agrega márgenes alrededor de cada item */
+}
+
+/* Estilo de los enlaces en el footer */
+.footer ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 14px; /* Tamaño de fuente de 14px */
+}
+
+/* Media queries para hacer el diseño responsive */
+
+/* Para pantallas medianas y grandes (tabletas y pantallas pequeñas) */
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        margin-top: 30px; /* Reduce el margen superior */
+    }
+
+    .logox {
+        width: 25vw; /* Ajusta el tamaño del logo como un porcentaje del ancho de la ventana */
+        object-fit: contain;
+        margin: 80px;
+        transition: all 0.1s ease; /* Añadir una transición suave para el cambio */
+    }
+
+    .title1 {
+        font-size: 48px; /* Reduce el tamaño del título principal */
+        text-align: center; /* Centra el texto */
+    }
+
+    .title2 {
+        font-size: 28px; /* Reduce el tamaño del título secundario */
+        text-align: center; /* Centra el texto */
+    }
+
+    .botongoogle {
+        width: 100%; /* Los botones ocupan todo el ancho disponible */
+        margin-bottom: 12px; /* Aumenta el margen entre los botones */
+    }
+
+    .container3 {
+        width: 100%; /* Hace que el contenedor de las líneas ocupe todo el ancho */
+        justify-content: space-around; /* Distribuye las líneas de forma equidistante */
+    }
+
+    .politicas {
+        font-size: 10px; /* Reduce el tamaño del texto en las políticas */
+        width: 100%; /* Hace que el texto ocupe todo el ancho */
+        text-align: center; /* Centra el texto */
+    }
+
+    .footer ul {
+        width: 100%; /* Hace que la lista ocupe todo el ancho */
+        justify-content: space-around; /* Distribuye los elementos en el footer */
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .title1 {
+        font-size: 36px; /* Reduce aún más el tamaño del título principal */
+    }
+
+    .title2 {
+        font-size: 24px; /* Reduce el tamaño del título secundario */
+    }
+
+    .botongoogle {
+        width: 100%; /* Los botones ocupan todo el ancho disponible */
+        padding: 15px; /* Reduce el relleno dentro de los botones */
+    }
+
+    .googleimg {
+        width: 18px; /* Reduce el tamaño de las imágenes dentro de los botones */
+    }
+
+    .textgoogle {
+        font-size: 14px; /* Reduce el tamaño del texto en los botones */
+    }
+
+    .footer ul {
+        width: 100%; /* Hace que la lista ocupe todo el ancho */
+        justify-content: space-between; /* Distribuye los elementos de la lista */
+    }
 }
